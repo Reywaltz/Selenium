@@ -21,6 +21,13 @@ def get_random_sites(filename: str) -> List[str]:
 
     if site_list == []:
         sys.exit(f"Error: Исходный файл {filename} пустой")
+
     shuffle(site_list)
+    try:
+        with open(filename, "w") as f:
+            for url in site_list:
+                f.write(f'{url}\n')
+    except FileNotFoundError:
+        sys.exit(f"Error: Исходного файла {filename} не существует")
 
     return site_list

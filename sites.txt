@@ -1,10 +1,10 @@
-https://mail.ru/
-https://mirea.ru/
-https://yandex.ru/
-https://github.com/
 https://hh.ru/
-https://vk.com/
-https://habr.ru/
+https://github.com/
+https://mirea.ru/
 https://rambler.ru/
-https://youtube.com/
+https://habr.ru/
+https://vk.com/
+https://mail.ru/
 https://google.com
+https://youtube.com/
+https://yandex.ru/
