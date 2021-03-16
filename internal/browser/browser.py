@@ -33,7 +33,6 @@ class WebDriver:
             self.driver.close()
 
             self.logger.info(f'Закрыта вкладка {cur_url}')
-
             time.sleep(1)
 
         self.driver.quit()

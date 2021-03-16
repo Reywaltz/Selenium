@@ -1,5 +1,6 @@
 from random import shuffle
 from typing import List
+import sys
 
 
 def get_random_sites(filename: str) -> List[str]:
@@ -11,11 +12,15 @@ def get_random_sites(filename: str) -> List[str]:
     :rtype: List[str]
     """
     site_list = []
+    try:
+        with open(filename, "r") as f:
+            for line in f.readlines():
+                site_list.append(line.strip())
+    except FileNotFoundError:
+        sys.exit(f"Error: Исходного файла {filename} не существует")
 
-    with open(filename, "r") as f:
-        for line in f.readlines():
-            site_list.append(line.strip())
-
+    if site_list == []:
+        sys.exit(f"Error: Исходный файл {filename} пустой")
     shuffle(site_list)
 
     return site_list
