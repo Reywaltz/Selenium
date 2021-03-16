@@ -1,8 +1,7 @@
-from selenium import webdriver
 from internal.browser import browser
 from internal.file import file
 from pkg import logger
-
+from selenium import webdriver
 
 # TODO
 # В текстовом файле содержится список из web – адресов 10 сайтов.
@@ -17,6 +16,7 @@ sites = file.get_random_sites('sites.txt')
 chrome_driver = webdriver.Chrome()
 
 driver = browser.WebDriver(log, chrome_driver)
+
 
 if __name__ == '__main__':
     driver.open_tabs(sites)

@@ -1,8 +1,9 @@
 import time
-from typing import List
 from dataclasses import dataclass
-from selenium import webdriver
 from logging import Logger
+from typing import List
+
+from selenium import webdriver
 
 
 @dataclass

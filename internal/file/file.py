@@ -1,6 +1,6 @@
+import sys
 from random import shuffle
 from typing import List
-import sys
 
 
 def get_random_sites(filename: str) -> List[str]:
