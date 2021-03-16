@@ -21,3 +21,4 @@ driver = browser.WebDriver(log, chrome_driver)
 if __name__ == '__main__':
     driver.open_tabs(sites)
     driver.close_tabs_reversed()
+    driver.logger.info('Успех. Сайты успешно открыты и перезаписаны в файл')
