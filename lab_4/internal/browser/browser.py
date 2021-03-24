@@ -38,3 +38,4 @@ class WebDriver:
         self.logger.info("Получены последние 10 сообщений")
         for i in messages[:10]:
             print(i.text.split('\n'), end='\n')
+        return messages
